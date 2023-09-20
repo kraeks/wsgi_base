@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Benutzerliste</title>
+  </head>
+  <body>
+    <h1>Benutzerliste</h1>
+    <ul>
+	    <li tal:repeat="user users">Name: ${user['name']} Alter: ${user['age']}</li>
+    </ul>
+  </body>
+</html>
