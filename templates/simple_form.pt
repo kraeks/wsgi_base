@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Simplest Form alive</title>
+  </head>
+  <body>
+    <h1>Simplest Form alive</h1>
+    <form method="post" action="/submit">
+      <p tal:condition="message|nothing" class="text-danger">${message}</p>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

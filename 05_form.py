@@ -17,7 +17,9 @@ def application(environ, start_response):
         print('Es sind keine Formdaten vorhanden')
 
     name = form_data.getvalue('name', 'John Doe')
+    print(name)
     email = form_data.getvalue('email', 'john@example.com')
+    print(email)
 
     status = '200 OK'
     headers = [('Content-type', 'text/html; charset=utf-8')]

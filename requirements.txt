@@ -1,2 +1,4 @@
 uwsgi
 chameleon
+pydantic
+sqlalchemy

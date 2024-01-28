@@ -31,3 +31,10 @@ pip install -r requirements.txt
 ```
 uwsgi --http :8000 --wsgi-file {appfile.py}
 ```
+
+```
+sqlite3 user_data.db
+SELECT * FROM users;
+.quit
+```
+

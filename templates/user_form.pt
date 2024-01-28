@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>User Form</title>
+  </head>
+  <body>
+    <h1>User Form</h1>
+    <form method="post" action="/submit">
+      <p tal:condition="message|nothing" class="text-danger">${message}</p>
+      <label for="username">Benutzername:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">E-Mail:</label>
+      <input type="text" id="email" name="email" required>
+      <label for="age">Alter:</label>
+      <input type="text" id="age" name="age" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
