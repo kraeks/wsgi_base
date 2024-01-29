@@ -32,6 +32,8 @@ pip install -r requirements.txt
 uwsgi --http :8000 --wsgi-file {appfile.py}
 ```
 
+## Check der Datenbankeinträge für Übungen mit SQLite3
+
 ```
 sqlite3 user_data.db
 SELECT * FROM users;
