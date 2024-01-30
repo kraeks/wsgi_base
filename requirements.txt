@@ -2,3 +2,5 @@ uwsgi
 chameleon
 pydantic
 sqlalchemy
+fastapi
+uvicorn[standard]
