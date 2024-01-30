@@ -1,5 +1,4 @@
 from wsgiref.util import setup_testing_defaults
-from wsgiref.simple_server import make_server
 
 # A relatively simple WSGI application. It's going to print out the
 # environment dictionary after being updated by setup_testing_defaults
@@ -11,6 +10,5 @@ def application(environ, start_response):
 
     start_response(status, headers)
 
-    ret = [("%s: %s\n" % (key, value)).encode("utf-8")
-           for key, value in environ.items()]
+    ret = [("%s: %s\n" % (key, value)).encode("utf-8") for key, value in environ.items()]
     return ret
