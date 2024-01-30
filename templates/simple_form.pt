@@ -8,7 +8,10 @@
       <p tal:condition="message|nothing" class="text-danger">${message}</p>
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required>
-      <br>
+      <label for="email">E-Mail-Adresse:</label>
+      <input type="text" id="email" name="email" required>
+      <label for="age">Alter:</label>
+      <input type="number" id="age" name="age" required>
       <input type="submit" value="Submit">
     </form>
   </body>
