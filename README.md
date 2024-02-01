@@ -40,3 +40,14 @@ SELECT * FROM users;
 .quit
 ```
 
+## Start der Fastapi
+
+```
+uvivorn ${programmfile_without_.py}:app --reload
+```
+
+Beispiel:
+
+```
+uvcorn 10_fastapi:app --reload
+```
