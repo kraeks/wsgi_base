@@ -7,6 +7,9 @@ class User(BaseModel):
     email: str
     age: int
 
+def write_to_excel(user_data):
+    """Daten nach Excel schreiben"""
+
 def application(environ, start_response):
 
     headers = [('Content-type', 'text/html; charset=utf-8')]

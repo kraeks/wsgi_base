@@ -37,6 +37,7 @@ def insert_user_data(user_data):
     try:
         session = Session()
         user = Table(username=user_data.username, email=user_data.email, age=user_data.age)
+        user = Table(**vars(user_data))
         session.add(user)
         session.commit()
 
